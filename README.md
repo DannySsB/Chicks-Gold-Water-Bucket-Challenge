@@ -1,4 +1,4 @@
-# Water Bucket Challenge
+# Water Bucket Challenge    
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
@@ -14,7 +14,7 @@ By using only an X-gallon and Y-gallon jug (no third jug), measure Z gallons of 
 - Install [Node.js](https://nodejs.org/en/download/)
 - Install The Angular CLI `npm install -g @angular/cli`
 
-## Development server
+## How to run the project?
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
