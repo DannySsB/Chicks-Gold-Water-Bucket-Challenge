@@ -1,0 +1,23 @@
+<p>Total Steps: {{stepOrder.length}}</p>
+
+<form>
+  <div>
+    <input [(ngModel)]="jug_x" name="jug_x" type="number" min="1" step="1" (keydown)="noDecimals($event,1)" placeholder="Ingrese primer valor">
+  </div>
+
+  <div>
+    <input [(ngModel)]="jug_y" name="jug_y" type="number" min="1" step="1" (keydown)="noDecimals($event,2)" placeholder="Ingrese segundo valor">
+  </div>
+
+  <div>
+    <input [(ngModel)]="cap_z" name="cap_z" type="number" min="1" step="1" (keydown)="noDecimals($event,3)" placeholder="Ingrese tercer valor">
+  </div> 
+</form>
+
+<button class="btn btn-primary" layout-align="center-center" (click)="solve()">
+  Submit
+</button>
+
+<app-tabla-resultados [stepsArray]="stepOrder" [showMessage]="showMessage"></app-tabla-resultados>
+  
+

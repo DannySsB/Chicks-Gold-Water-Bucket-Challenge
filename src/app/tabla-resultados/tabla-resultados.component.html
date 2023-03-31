@@ -1,0 +1,25 @@
+<table *ngIf="stepsArray.length > 0" mat-table [dataSource]="stepsArray" class="mat-elevation"> 
+    <!-- Jug X Column -->
+    <ng-container matColumnDef="x">
+      <th mat-header-cell *matHeaderCellDef> Jug X </th>
+      <td mat-cell *matCellDef="let element"> {{element.x}} </td>
+    </ng-container>
+  
+    <!-- Jug Y Column -->
+    <ng-container matColumnDef="y">
+      <th mat-header-cell *matHeaderCellDef> Jug Y </th>
+      <td mat-cell *matCellDef="let element"> {{element.y}} </td>
+    </ng-container>
+  
+    <!-- Instruction -->
+    <ng-container matColumnDef="instruction">
+      <th mat-header-cell *matHeaderCellDef> Instruction </th>
+      <td mat-cell *matCellDef="let element"> {{element.instruction}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  <div> {{showMessage}}</div>
+ 
