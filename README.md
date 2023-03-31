@@ -1,6 +1,18 @@
-# WaterBucketChallenge
+# Water Bucket Challenge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+
+Build an application that solves the Water Jug Riddle for dynamic inputs (X, Y, Z). 
+The simulation should have a UI (if SPA) to display state changes 
+for each state for each jug (Empty, Full or Partially Full).
+You have an X-gallon and a Y-gallon jug that you can fill from a lake.
+(Assume lake has unlimited amount of water.) 
+By using only an X-gallon and Y-gallon jug (no third jug), measure Z gallons of water.
+
+## What do you need to run the project?
+
+- Install [Node.js](https://nodejs.org/en/download/)
+- Install The Angular CLI `npm install -g @angular/cli`
 
 ## Development server
 
